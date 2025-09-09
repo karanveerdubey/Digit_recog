@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Digit Recognition</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    
+
+</head>
+<body>
+    <h1>Digit Recognition</h1>
+    <h2>by Karanveer Dubey</h2>
+    <h3> <strong>Note:</strong> Please input the digit using touchpad or touchscreen and keep the digit in the center </h3>
+    <canvas id="handwriting-canvas" width="360" height="360"></canvas>
+    <div class="button-container">
+        <button id="submit-button">Submit</button>
+        <button id="undo-button">Undo</button>
+        <button id="clear-button">Clear</button>
+    </div>
+    <div id="stars-container"></div>
+    <script src="static/script.js"></script>
+    <div id="prediction-result">Recognized digit will be displayed here</div>
+<!-- Just for debugging -->
+<!-- <img id="debug-image" src="" width="280" height="280" style="border: 1px solid black; display: block;"> -->
+
+</body>
+</html>
